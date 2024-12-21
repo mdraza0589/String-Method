@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        const name="raza"
+        const length=4
+        // console.log('hello my name is ${name} and my length is ${lenght}');
+
+        const myName= new String('mohammadraza');
+
+        console.log(myName[0]);
+        console.log(myName.length);
+        console.log(myName.toUpperCase());
+        console.log(myName.charAt(0));
+        console.log(myName.indexOf('m'));
+
+        const newString=myName.substring(0,3)
+        console.log(newString);
+        
+        const anotherString=myName.slice(0,3)
+        console.log(anotherString);
+        
+        const newStringOne="   tabish   "
+        console.log(newStringOne);
+        console.log(newStringOne.trim());
+        
+
+        const url="itsmyimail004.com"
+        console.log(url.replace(".com" , ".in"));
+        
+        console.log(url.includes('004'));
+        console.log(url.includes('005'));
+        
+        const lname='name is raza'
+        console.log(lname);
+        console.log(lname.split(' '));
+        
+
+
+        const sp=lname.split(' ')
+        // console.log(sp[2]);
+
+        var store='';
+        for(var i=sp.length-1;i>=0;i--){
+            store=store+sp[i]+" ";
+        }
+        console.log(store);
+
+    </script>
+</body>
+</html>
+
